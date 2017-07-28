@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 #define FAUXPAS_IGNORED_IN_FILE(...)
 FAUXPAS_IGNORED_IN_FILE(APIAvailability)
 
+/**
+ The current version of the Stripe SDK
+ */
 static NSString *const STPSDKVersion = @"11.2.0";
 
 @class STPBankAccount, STPBankAccountParams, STPCard, STPCardParams, STPSourceParams, STPToken, STPPaymentConfiguration;
@@ -173,21 +176,32 @@ static NSString *const STPSDKVersion = @"11.2.0";
 /**
  Convenience methods for working with Apple Pay.
  */
-@interface Stripe(ApplePay)
+@interface Stripe (ApplePay)
 
 /**
- Whether or not this device is capable of using Apple Pay. This checks both
- whether the device supports Apple Pay, as well as whether or not they have
- stored Apple Pay cards on their device.
+ Determines whether or not the `paymentRequest` is ready for submission
 
- @param paymentRequest The return value of this method depends on the
- `supportedNetworks` property of this payment request, which by default should be
- `@[PKPaymentNetworkAmex, PKPaymentNetworkMasterCard, PKPaymentNetworkVisa, PKPaymentNetworkDiscover]`.
+ This checks whether or not the device supports Apple Pay, user has a stored
+ Apple Pay card from a payment network supported by Stripe, and the required
+ fields for `PKPaymentRequest` to succeed.
 
- @return whether or not the user is currently able to pay with Apple Pay.
+ @see `[Stripe deviceSupportsApplePay]`
 */
 + (BOOL)canSubmitPaymentRequest:(PKPaymentRequest *)paymentRequest;
 
+/**
+ Determines whether or not this device is capable and ready for Apple Pay
+
+ This checks both whether the device supports Apple Pay as well as whether or
+ not the user has a stored Apple Pay card from a payment network supported by
+ Stripe.
+
+ Currently, the payment networks supproted are:
+    - PKPaymentNetworkAmex
+    - PKPaymentNetworkDiscover
+    - PKPaymentNetworkMasterCard
+    - PKPaymentNetworkVisa
+ */
 + (BOOL)deviceSupportsApplePay;
 
 /**
