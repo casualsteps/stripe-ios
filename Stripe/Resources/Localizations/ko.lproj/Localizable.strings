@@ -1,0 +1,170 @@
+/* {card brand} ending in {last4} */
+"%@ Ending In %@" = "%1$@ 끝자리 %2$@";
+
+/* Title for Add a Card view */
+"Add a Card" = "결제수단 추가";
+
+/* Button to add a new credit card. */
+"Add New Card…" = "카드 추가";
+
+/* Caption for Address field on address form */
+"Address" = "주소";
+
+/* Text for Apple Pay payment method */
+"Apple Pay" = "애플 페이";
+
+/* Caption for Apartment/Address line 2 field on address form */
+"Apt." = "아파트";
+
+/* Text for back button */
+"Back" = "뒤로";
+
+/* Title for billing address entry section */
+"Billing Address" = "청구 주소";
+
+/* Title for credit card number entry field */
+"Card" = "카드 번호";
+
+/* accessibility label for text field */
+"card number" = "카드 번호";
+
+/* Caption for City field on address form */
+"City" = "도시";
+
+/* Title for contact info form */
+"Contact" = "연락처";
+
+/* Caption for Country field on address form */
+"Country" = "국가";
+
+/* Caption for County field on address form (only countries that use county, like United Kingdom) */
+"County" = "카운티";
+
+/* Title for delivery info form */
+"Delivery" = "배달";
+
+/* Button on SMS verification screen if the user did not receive the SMS code. */
+"Didn't receive the code?" = "코드를 못 받으셨나요?";
+
+/* Caption for Email field on address form */
+"Email" = "이메일";
+
+/* No comment provided by engineer. */
+"Enter card details manually" = "카드 정보 직접 입력";
+
+/* No comment provided by engineer. */
+"Enter the verification code to use the payment info you stored with Stripe." = "저장된 결제 정보 사용을 위한 인증 번호를 입력해주세요";
+
+/* accessibility label for text field */
+"expiration date" = "유효 기간";
+
+/* Error message for checkout account api call */
+"Failed to parse account response" = "Failed to parse account response";
+
+/* Cancel button for Remember Me SMS verification screen. */
+"Fill in your card details manually" = "Fill in your card details manually";
+
+/* Label for free shipping method */
+"Free" = "Free";
+
+/* Message shown when the user enters an incorrect SMS verification code. */
+"Invalid Code" = "Invalid Code";
+
+/* Shipping form error message */
+"Invalid Shipping Address" = "Invalid Shipping Address";
+
+/* Title for screen when data is still loading from the network. */
+"Loading…" = "Loading…";
+
+/* Caption for Name field on address form */
+"Name" = "이름";
+
+/* Button to move to the next text entry field */
+"Next" = "다음";
+
+/* No comment provided by engineer. */
+"OK" = "확인";
+
+/* Button to paste a copied SMS code into the verification field. */
+"Paste copied code?" = "복사된 코드 붙히기";
+
+/* Title for Payment Method screen */
+"Payment Method" = "결제 방법";
+
+/* Caption for Phone field on address form */
+"Phone" = "전화 번호";
+
+/* Caption for Postal Code field on address form (only shown in countries other than the United States) */
+"Postal Code" = "우편 번호";
+
+/* Caption for Province field on address form (only countries that use province, like Canada) */
+"Province" = "프로빈스";
+
+/* Label for the switch to enable Remember Me */
+"Save for use in other apps" = "다른 앱에서도 사용하도록 저장";
+
+/* Title for shipping info form */
+"Shipping" = "배송";
+
+/* Label for shipping method form */
+"Shipping Method" = "배송 방법";
+
+/* Error message for Remember Me network error. More detailed cause of the error will be filled into the substitution. */
+"Something went wrong with Remember Me: %@" = "오류가 발생했습니다: %@";
+
+/* Caption for State field on address form (only countries that use state , like United States) */
+"State" = "주";
+
+/* Caption for generalized state/province/region field on address form (not tied to a specific country's format) */
+"State / Province / Region" = "주 / 지역";
+
+/* Footer shown when the user enables Remember Me that shows additional info. The html-style tags control which parts of the text link to the Stripe Privacy Policy, Terms of Service, and Remember Me More Info pages, and can be moved around as needed in the translation (although they CANNOT overlap). */
+"Stripe may store my payment info and phone number for use in this app and other apps, and use my number for verification, subject to Stripe's <pplink>Privacy Policy</pplink> and <termslink>Terms</termslink>. <infolink>More Info</infolink>" = "Stripe의 개인정보보호 정책에 따라 이 앱 포함 여러 앱에서 나의 결제 정보와 전화 번호를 통해 인증을 하도록 저장 허용합니다.";
+
+/* Error message for network request being cancelled. */
+"The operation was cancelled" = "취소되었습니다";
+
+/* Error when there is a problem processing the credit card */
+"There was an error processing your card -- try again in a few seconds" = "신용카드 처리에 문제가 발생했습니다 -- 잠시 후 다시 시도해주세요";
+
+/* No comment provided by engineer. */
+"There was an error submitting your autofilled card details." = "신용카드 정보의 자동 기입에 에러가 발생했습니다.";
+
+/* Unexpected error, such as a 500 from Stripe or a JSON parse error */
+"There was an unexpected error -- try again in a few seconds" = "예상치 못한 에러가 발생했습니다 -- 잠시 후 다시 시도해주세요";
+
+/* Error message when failing to type in SMS code for Remember me too many times. */
+"Too many incorrect attempts" = "잘못된 시도가 너무 많았습니다";
+
+/* Title for SMS verification code screen */
+"Verification Code" = "인증 코드";
+
+/* Message shown after sending SMS verification code. The substitution is a phone number. */
+"We just sent a text message to: %@" = "다음 번호로 문자 메시지를 보냈습니다: %@";
+
+/* Placeholder text for non-Amex CVC field (3 digits) */
+"XXX" = "XXX";
+
+/* Placeholder text for Amex CVC field (4 digits) */
+"XXXX" = "XXXX";
+
+/* Error when the card has already expired */
+"Your card has expired" = "카드 유효기간이 지났습니다";
+
+/* Error when the card was declined by the credit card networks */
+"Your card was declined" = "카드 결제가 거부되었습니다";
+
+/* Error when the card's expiration month is not valid */
+"Your card's expiration month is invalid" = "올바른 유효기간이 아닙니다";
+
+/* Error when the card's expiration year is not valid */
+"Your card's expiration year is invalid" = "올바른 유효기간이 아닙니다";
+
+/* Error when the card number is not valid */
+"Your card's number is invalid" = "올바른 카드 번호가 아닙니다";
+
+/* Error when the card's CVC is not valid */
+"Your card's security code is invalid" = "올바른 보안 코드가 아닙니다";
+
+/* Caption for Zip Code field on address form (only shown when country is United States only) */
+"ZIP Code" = "우편 번호";
